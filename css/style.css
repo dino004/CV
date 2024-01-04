@@ -1,0 +1,110 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 25px;
+  list-style: none;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  padding: 15px;
+  margin-right: 10px;
+  background-color: yellow;
+}
+
+.right {
+  width: 70%;
+  padding: 15px;
+}
+
+.photo {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.link {
+  position: relative;
+  padding-left: 20px;
+}
+
+.link:hover,
+.link:focus {
+  color: brown;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.biography {
+  border-bottom: 10px solid aqua;
+  position: relative;
+  
+}
+
+.biography:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.years {
+  position: absolute;
+  right: 20px;
+}
+
+.experience__items{
+    display: block;
+    width: 80%;
+}
