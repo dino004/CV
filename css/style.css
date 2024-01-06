@@ -1,12 +1,21 @@
-body{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+body {
+  background: #f6f6fa;
+  margin-left: auto;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
+  outline: none;
   text-decoration: none;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul {
+  list-style: none;
 }
 
 h1,
@@ -18,48 +27,40 @@ h6 {
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  padding-left: 25px;
-  list-style: none;
-}
-
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-main {
+.wrapper {
+  background-color: #fff;
   display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.left {
-  width: 30%;
-  padding: 15px;
-  margin-right: 10px;
-  background-color: yellow;
-}
+/* Sidebar */
 
-.right {
-  width: 70%;
+.sidebar {
+  width: 370px;
   padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(108, 151, 102);
 }
 
 .photo {
+  max-width: 100%;
   border-radius: 15px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+}
+
+.sidebar-content {
+  padding: 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  color: #161d2a;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .section {
@@ -89,22 +90,49 @@ main {
   margin-bottom: 8px;
 }
 
-.biography {
-  border-bottom: 10px solid aqua;
-  position: relative;
-  
+/* Main content */
+
+.main-content {
+  width: 70%;
+  padding: 48px 80px 40px 80px;
+  box-sizing: border-box;
+}
+
+.my-profession {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.my-name {
+  color: #000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.my-info {
+  margin-bottom: 40px;
+}
+
+.biography-title {
+  background-color: rgb(108, 151, 102);
+  padding: 3px;
 }
 
 .biography:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.years {
-  position: absolute;
-  right: 20px;
-}
-
-.biography__items{
-    display: block;
-    width: 80%;
+.period-and-location {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 8px;
 }

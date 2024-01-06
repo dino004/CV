@@ -8,131 +8,192 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="hidden">CV</h1>
-    </header>
-    <main>
-      <div class="left">
-        <h2 class="name">Dmytro Lytvyn</h2>
-        <img src="./img/photo.jpg" alt="my photo" class="photo" width="300px" />
-        <section class="contakt_section section">
-          <h2>Contact details</h2>
-          <address>
-            <ul class="contact">
+    <main class="wrapper">
+      <div class="main-content">
+        <div>
+          <!--My info-->
+          <div class="my-info">
+            <h2 class="my-profession">Front-End Developer</h2>
+            <h1 class="my-name">Dmytro Lytvyn</h1>
+          </div>
+
+          <section class="biography">
+            <h2 class="biography-title">Education</h2>
+            <ul class="biography__items">
+              <li class="item">
+                Specialist Pervomaysk Polytechnic Institute, Pervomaysk
+                Mechanical engineer
+                <p class="period-and-location">
+                  September 2005 - February 2011
+                  <span class="border">|</span> Pervomaysk
+                </p>
+              </li>
+              <li class="item">
+                Full stack developer, goit.global, student
+                <p class="period-and-location">
+                  September 2022 - up to now <span class="border">|</span> Odesa
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="biography">
+            <h2 class="biography-title">Experience</h2>
+            <ul class="biography__items">
+              <li class="item">
+                Warehouse worker at various warehouses in Poland
+                <p class="period-and-location">
+                  May 2014 - October 2020 <span class="border">|</span> Poland
+                </p>
+              </li>
+              <li class="item">
+                Mechanic Pegas JSC, Odesa Worked as a truck repair mechanic
+                (undercarriage repair, gearbox, compressor, etc.). Attended
+                professional development courses
+                <p class="period-and-location">
+                  January 2020 - December 2022
+                  <span class="border">|</span> Odesa
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="biography">
+            <h2 class="biography-title">Military service</h2>
+            <ul class="biography__items">
+              <li class="item">
+                Naval Forces of the Ukrainian Armed Forces Served on the
+                corvette "Ternopil" in the city of Sevastopol.
+                <p class="period-and-location">
+                  March 2011 - May 2014 <span class="border">|</span> Sevastopol
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="biography">
+            <h2 class="biography-title">Volunteering</h2>
+            <ul class="biography__items">
+              <li class="item">
+                I am a member of a voluntary organization. Together with the
+                police, we patrol different areas cities
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <img src="./img/photo.jpg" alt="my photo" class="photo"/>
+
+        <div class="sidebar-content">
+          <!--Contacts-->
+          <section class="section contakt_section">
+            <h2 class="sidebar-title">Contact details</h2>
+            <address>
+              <ul class="contact">
+                <li class="item">
+                  <a
+                    href="https://www.google.com/maps/d/viewer?mid=1WkwqCXnQ6ugu9JclXtBVO8pFdUg&hl=ru&ll=46.46955200000002%2C30.728759999999998&z=17"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link contact__link contact__link--location"
+                    >Odesa City
+                    <svg class="icon icon--location">
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-location"
+                      ></use></svg></a>
+                </li>
+                <li class="item">
+                  <a
+                    href="mailto:medniy88@icloud.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link contact__link contact__link--email"
+                    >medniy88@icloud.com
+                    <svg class="icon icon--email">
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-mail"
+                      ></use></svg></a>
+                </li>
+                <li class="item">
+                  <a
+                    href="tel:+380968759226"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="link contact__link contact__link--phone"
+                    >+38096 875 92 26
+                    <svg class="icon icon--phone">
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-mobile"
+                      ></use></svg></a>
+                </li>
+              </ul>
+            </address>
+          </section>
+
+          <!--Social networks-->
+          <section class="section socialNetworks_section">
+            <h2 class="sidebar-title">Social networks</h2>
+            <ul>
               <li class="item">
                 <a
-                  href="https://www.google.com/maps/d/viewer?mid=1WkwqCXnQ6ugu9JclXtBVO8pFdUg&hl=ru&ll=46.46955200000002%2C30.728759999999998&z=17"
+                  href="https://github.com/dino004"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="link contact__link contact__link--location"
-                  >Odesa City
-                  <svg class="icon icon--location">
+                  class="link socialNetworks__link"
+                  >github<svg class="icon icon--github">
                     <use
-                      href="./img/svg/symbol-defs.svg#icon-location"
+                      href="./img/svg/symbol-defs.svg#icon-github"
                     ></use></svg></a>
               </li>
               <li class="item">
                 <a
-                  href="mailto:medniy88@icloud.com" target="_blank"
+                  href="https://www.linkedin.com/in/medniy/"
+                  target="_blank"
                   rel="noreferrer noopener"
-                  class="link contact__link contact__link--email"
-                  >medniy88@icloud.com
-                  <svg class="icon icon--email">
-                    <use href="./img/svg/symbol-defs.svg#icon-mail"></use></svg></a>
-              </li>
-              <li class="item">
-                <a
-                  href="tel:+380968759226" target="_blank"
-                  rel="noreferrer noopener"
-                  class="link contact__link contact__link--phone"
-                  >+38096 875 92 26
-                  <svg class="icon icon--phone">
+                  class="link socialNetworks__link"
+                  >linkedin<svg class="icon icon--linkedin">
                     <use
-                      href="./img/svg/symbol-defs.svg#icon-mobile"
+                      href="./img/svg/symbol-defs.svg#icon-linkedin"
                     ></use></svg></a>
               </li>
             </ul>
-          </address>
-        </section>
-        <section class="socialNetworks_section section">
-          <h2>Social networks</h2>
-          <ul>
-            <li class="item"><a href="https://github.com/dino004" target="_blank"
-              rel="noreferrer noopener" class="link socialNetworks__link">github<svg class="icon icon--github">
-              <use
-                href="./img/svg/symbol-defs.svg#icon-github"
-              ></use></svg></a></li>
-            <li class="item"><a href="https://www.linkedin.com/in/medniy/" target="_blank"
-              rel="noreferrer noopener" class="link socialNetworks__link">linkedin<svg class="icon icon--linkedin">
-              <use
-                href="./img/svg/symbol-defs.svg#icon-linkedin"
-              ></use></svg></a></li>
-          </ul>
-        </section>
-        <section class="softSkills_section section">
-          <h2>Soft Skills</h2>
-          <ol>
-            <li>Stress resistance</li>
-            <li>Honesty</li>
-            <li>Critical thinking</li>
-            <li>Adaptability and flexibility</li>
-            <li>Learning ability</li>
-          </ol>
-        </section>
-        <section class="techSkills_section section">
-          <h2>Tech Skills</h2>
-          <ol>
-            <li>HTML5/CSS</li>
-            <li>Frontend frameworks</li>
-            <li>JavaScript</li>
-            <li>Git/GitHub</li>
-          </ol>
-        </section>
-        <section class="hobbies_section section">
-          <h2>Hobbies</h2>
-          <ol>
-            <li>Sport</li>
-            <li>Swimming</li>
-            <li>Beach volleyball</li>
-            <li>Cycling</li>
-            <li>Guitar play</li>
-          </ol>
-        </section>
-      </div>
-      <div class="right">
-        <section><h2 class="hidden">About me</h2></section>
-        <section class="biography">
-          <h2>Education</h2>
-          <ol class="biography__items">
-            <li class="item">Specialist
-              Pervomaysk Polytechnic Institute, Pervomaysk
-              Mechanical engineer <span class="years">2005-2011</span></li>
-            <li class="item">Full stack developer, goit.global, student<span class="years">from 2022 to today</span></li>
-          </ol>
-        </section>
-               <section class="biography">
-          <h2>Experience</h2>
-          <ol class="biography__items">
-            <li class="item">Warehouse worker at various warehouses in Poland <span class="years">2014-2020</span></li>
-            <li class="item">Mechanic
-              Pegas JSC, Odesa
-              Worked as a truck repair mechanic (undercarriage repair,
-              gearbox, compressor, etc.). Attended professional development courses <span class="years">2020-2022</span></li>
-          
-          </ol>
-        </section>
-        <section class="biography">
-          <h2>Military service</h2>
-          <p>Naval Forces of the Ukrainian Armed Forces
-            Served on the corvette "Ternopil" in the city of Sevastopol.
-            <span class="years">2011-2014</span></p>
-        </section>
-        <section class="biography">
-          <h2>Volunteering</h2>
-          <p>I am a member of a voluntary organization. Together with the police, we patrol different areas
-            cities</p>
-        </section>
-      </div>
+          </section>
+
+          <!--Tech skills-->
+          <section class="section techSkills_section">
+            <h2 class="sidebar-title">Tech Skills</h2>
+            <ol>
+              <li class="item">HTML5/CSS</li>
+              <li class="item">Frontend frameworks</li>
+              <li class="item">JavaScript</li>
+              <li class="item">Git/GitHub</li>
+            </ol>
+          </section>
+
+          <!--Soft Skills-->
+          <section class="section softSkills_section">
+            <h2 class="sidebar-title">Soft Skills</h2>
+            <ol>
+              <li class="item">Stress resistance</li>
+              <li class="item">Honesty</li>
+              <li class="item">Critical thinking</li>
+              <li class="item">Adaptability and flexibility</li>
+              <li class="item">Learning ability</li>
+            </ol>
+          </section>
+
+          <!--Hobbies-->
+          <section class="section hobbies_section">
+            <h2 class="sidebar-title">Hobbies</h2>
+            <ol>
+              <li class="item">Sport</li>
+              <li class="item">Swimming</li>
+              <li class="item">Beach volleyball</li>
+              <li class="item">Cycling</li>
+              <li class="item">Guitar play</li>
+            </ol>
+          </section>
+        </div>
+      </aside>
     </main>
   </body>
 </html>
